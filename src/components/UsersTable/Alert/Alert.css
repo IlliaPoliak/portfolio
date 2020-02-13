@@ -1,0 +1,19 @@
+
+.alert{
+    position: relative;
+    top: 228px;
+    left: 35%;
+    width: 470px;
+    height: 242px;
+    border-radius: 4px;
+    box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.24);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.alertBtnsWrapper button{
+    margin-left: 10px;
+}

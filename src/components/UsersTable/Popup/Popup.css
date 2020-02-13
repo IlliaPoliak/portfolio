@@ -1,0 +1,87 @@
+
+.popupContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popup{
+    position: relative;
+    top: 228px;
+    left: 35%;
+    width: 432px;
+    height: 342px;
+    border-radius: 4px;
+    box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.24);
+    background-color: #ffffff;
+}
+
+.popupContent{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 36px 24px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.popupInfo{
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.4px;
+}
+
+.recipient{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    margin-bottom: 6px;
+
+}
+
+.salaryInput{
+    width: 384px;
+    height: 42px;
+    border-radius: 4px;
+    border: solid 1px #c6c6c6;
+    background-color: #ffffff;
+
+    font-size: 14px;
+    font-weight: bold;
+    padding: 13px 24px;
+    letter-spacing: 0.4px;
+    box-sizing: border-box;
+}
+
+.changeSalaryBtn{
+    margin-left: 100px;
+}
+
+.btnClosePopup{
+    position: absolute;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 24px;
+    box-shadow: 0 12px 18px -6px rgba(0, 59, 133, 0.24), 0 8px 5px -6px rgba(0, 48, 109, 0.43);
+    background-color: #2988ff;
+
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    top: -36px;
+    right: -36px;
+}
+
+.btnClosePopup:hover{
+    cursor: pointer;
+    background-color: #67abff;
+}

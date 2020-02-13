@@ -1,0 +1,31 @@
+
+.backBtnWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.backBtn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(110, 171, 255);
+    border: 2px solid white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, serif;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.backBtn:hover{
+    background-color: rgba(221, 235, 255, 0.59);
+    cursor: pointer;
+}
+
+.backBtn:active{
+    background-color: rgba(49, 135, 255, 0.59);
+}

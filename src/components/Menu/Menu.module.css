@@ -1,0 +1,50 @@
+.menuWrapper{
+    display: flex;
+    font-size: 24px;
+    font-family: 'Arial' ,serif;
+}
+
+.menu {
+    background-color: rgb(116, 116, 116);
+    width: 0;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.show{
+    width: 200px;
+}
+
+.menuIcon{
+    font-size: 40px;
+    color: #30006abd;
+}
+
+.menuIcon:hover{
+    cursor: pointer;
+}
+
+.menuWrapper nav ul {
+    padding: 20px;
+}
+
+.menuWrapper nav ul li{
+    list-style: none;
+    transition: 0.4s;
+    padding: 0 10px;
+}
+
+.menuWrapper nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+    transition: 0.3s;
+}
+
+.menuWrapper nav ul li a:hover{
+    color: rgb(255, 113, 113);
+}
+
+.menuWrapper .active{
+    color: #2e2e2e;
+}

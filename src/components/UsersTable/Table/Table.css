@@ -1,0 +1,80 @@
+.table{
+    margin: 25px 0;
+    width: 1200px;
+    border-collapse: collapse;
+    border-radius: 4px;
+    box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.24);
+}
+
+.table th{
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    background-color: #ececec;
+    text-align: left;
+    padding: 12px 24px;
+}
+
+.table th:nth-child(2):hover,
+.table th:nth-child(3):hover,
+.table th:nth-child(4):hover,
+.table th:nth-child(5):hover,
+.table th:nth-child(6):hover,
+.table th:nth-child(7):hover{
+    cursor: pointer;
+    background-color: rgb(209, 209, 209);
+}
+
+.table th:nth-child(2),
+.table th:nth-child(5),
+.table th:nth-child(6){
+    width: 60px;
+}
+
+.table th:nth-child(3){
+    width: 200px;
+}
+
+.table th:nth-child(4){
+    width: 150px;
+}
+
+.table th:nth-child(7){
+    width: 150px;
+}
+
+.table td{
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    padding: 20px 24px;
+    background-color: #fff;
+}
+
+.table tr:hover{
+    background-color: #d9d9d9;
+}
+
+.table tr:last-child td{
+    border: none;
+}
+
+.table th .currency:hover{
+    cursor: pointer;
+    background-color: #e7ff2f;
+    font-size: 14px;
+}
+
+.table th .currency{
+    font-weight: normal;
+    transition: 0.4s;
+}
+
+.matches-count{
+    font-size: 14px;
+    margin-left: 20px;
+}

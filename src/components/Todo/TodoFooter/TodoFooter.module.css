@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex: 0 1 auto;
+    align-items: flex-end;
+}
+
+.btnGroup .filterBtn{
+    padding: 4px 5px;
+    margin: 0 5px;
+    width: 80px;
+    background-color: rgb(68, 68, 68);
+
+    border: 3px solid rgb(255, 255, 255);
+    color: #fff;
+}
+
+.btnGroup .filterBtn:hover{
+    background-color: rgb(132, 132, 132);
+    cursor: pointer;
+}
+
+.btnGroup .filterBtn:focus{
+    outline: none;
+}
+
+.btnGroup .filterBtn.active {
+    background-color: rgb(82, 180, 255);
+}

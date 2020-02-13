@@ -1,0 +1,28 @@
+
+.pagination{
+	display: flex;
+}
+
+.pagesWrapper{
+	display: flex;
+}
+
+.paginationBtn{
+	background-color: #2988ff;
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 10px;
+	margin-left: 5px;
+	width: 35px;
+}
+
+.currentPage{
+	background-color: rgb(255, 108, 108);
+}
+
+.pagination button:hover{
+	cursor: pointer;
+	background-color: #4195fb;
+}
