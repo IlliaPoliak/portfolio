@@ -14,7 +14,9 @@ import {
     CONVERT_CURRENCY,
     TOGGLE_DELETE_ALERT,
     SET_MESSAGE,
-    SET_REG_DATA, ADD_TEST
+    SET_REG_DATA, ADD_TEST,
+    SET_DARK_MODE,
+    SET_LANG
 } from '../constants'
 
 
@@ -31,6 +33,8 @@ export const addTest = data => ({
 export const toggleIsLoading = bool => ({ type: SET_LOADING_STATUS, payload: bool })
 export const setErrorMessage = error => ({ type: SET_ERROR, payload: error })
 export const setMessage = message => ({ type: SET_MESSAGE, payload: message })
+export const setDarkMode = bool => ({ type: SET_DARK_MODE, payload: bool })
+export const setLang = lang => ({ type: SET_LANG, payload: lang })
 
 export const setUsersData = data => ({ type: SET_USERS_DATA, payload: data })
 export const setExchangeRates = data => ({ type: SET_EXCHANGE_RATES, payload: data })

@@ -1,0 +1,10 @@
+.paramsInfo {
+	width: 60%;
+	font-size: 1em;
+	color: #fff;
+}
+
+.errorInfo {
+	color: red;
+	font-weight: bold;
+}

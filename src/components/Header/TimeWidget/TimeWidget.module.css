@@ -1,0 +1,7 @@
+.timeBlock{
+    display: flex;
+    flex-direction: column;
+    color: #f6f6f6;
+    font-size: 12px;
+    width: 150px;
+}

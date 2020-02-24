@@ -2,16 +2,32 @@ body{
 	margin: 0;
 	padding: 0;
 
-	font-family: Montserrat,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+	/* font-family: Montserrat,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif; */
 }
 
 .mainContent{
-	padding: 50px 0;
 	width: 100%;
 	display: flex;
     justify-content: center;
-	background-color: rgb(48, 48, 48);
+	background-color: rgb(197, 197, 197);
 	box-sizing: border-box;
-
-	/* background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); */
 }
+
+.darkModeStyle{
+	background-color: rgb(49, 49, 49);
+}
+
+::-webkit-scrollbar { 
+	width: 4px; 
+}
+::-webkit-scrollbar-track-piece { 
+	background-color: #666;
+}
+::-webkit-scrollbar-thumb { 
+	height: 50px; 
+	background-color: orange;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: red;
+}	

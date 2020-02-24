@@ -4,18 +4,21 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import styles from './App.module.css'
 import { setRegData, addTest } from '../store/actions'
 
-// import Menu from './Menu/Menu.jsx'
-import Home from './Home/Home'
-import TestPage from './Tests/TestPage'
-import Register from './Register/Register'
-import Calculator from './Calculator/Calculator'
-import Redactor from './Redactor/Redactor'
-import TextRedactor from './TextRedactor/TextRedactor'
 import Header from './Header/Header';
+import Home from './Home/Home'
 import Footer from './Footer/Footer';
-import Weather from './Weather/Weather.jsx';
-import Todo from './Todo/Todo';
-import UsersTable from './UsersTable/UsersTable';
+import Works from './Works/Works'
+import Contacts from './Contacts/Contacts'
+
+import TestPage from './Works/Tests/TestPage'
+import Register from './Works/Register/Register'
+import Calculator from './Works/Calculator/Calculator'
+import Redactor from './Works/Redactor/Redactor'
+import TextRedactor from './Works/TextRedactor/TextRedactor'
+import Weather from './Works/Weather/Weather';
+import Todo from './Works/Todo/Todo';
+import UsersTable from './Works/UsersTable/UsersTable';
+import PageNotFound from './404/PageNotFound';
 
 
 const App = props => {
@@ -25,39 +28,50 @@ const App = props => {
 		alert(JSON.stringify(formData))
 	}
 
+	const { mainContent, darkModeStyle } = styles
+
 	return (
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Header />
-			<main className={styles.mainContent}>
+			<main className={props.darkMode ? `${mainContent} ${darkModeStyle}` : mainContent}>
 				<Switch>
 					<Route exact path="/">
-						<Home regData={props.regData} />
+						<Home darkMode={props.darkMode} />
 					</Route>
-					<Route path="/tests">
-						<TestPage tests={props.tests} addTest={props.addTest} />
+					<Route exact path="/works">
+						<Works />
 					</Route>
-					<Route path="/register">
+					<Route exact path="/contacts">
+						<Contacts darkMode={props.darkMode} />
+					</Route>
+					<Route path="/works/tests">
+						<TestPage tests={props.tests} addTest={props.addTest} darkMode={props.darkMode} />
+					</Route>
+					<Route path="/works/register">
 						<Register onSubmit={handleSubmit} />
 					</Route>
-					<Route path="/calculator">
+					<Route path="/works/calculator">
 						<Calculator />
 					</Route>
-					<Route path="/redactor">
-						<Redactor />
+					<Route path="/works/redactor">
+						<Redactor darkMode={props.darkMode} />
 					</Route>
-					<Route path="/text-redactor">
+					<Route path="/works/text-redactor">
 						<TextRedactor />
 					</Route>
-					<Route path="/weather">
+					<Route path="/works/weather">
 						<Weather />
 					</Route>
-					<Route path="/todo">
+					<Route path="/works/todo">
 						<Todo />
 					</Route>
-					<Route path="/users-table">
+					<Route path="/works/users-table">
 						<UsersTable />
 					</Route>
-					
+					<Route path="*">
+						<PageNotFound />
+					</Route>
+
 				</Switch>
 			</main>
 			<Footer />
@@ -67,7 +81,8 @@ const App = props => {
 
 export default connect(state => ({
 	regData: state.register.regData,
-	tests: state.testing.tests
+	tests: state.testing.tests,
+	darkMode: state.app.darkMode
 }), {
 	setRegData,
 	addTest

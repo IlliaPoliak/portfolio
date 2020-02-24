@@ -20,4 +20,4 @@ let reducers = combineReducers({
     table
 })
 
-export const store = createStore(reducers, applyMiddleware(save({namespace: 'todo-app'}), thunkMiddleware))
+export const store = createStore(reducers, applyMiddleware(save({namespace: 'portfolio-app'}), thunkMiddleware))

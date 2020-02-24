@@ -1,17 +1,17 @@
 
 .backBtnWrapper{
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 40px auto;
+    position: fixed;
+    top: 100px;
+    left: 0%;
 }
 
 .backBtn{
     text-decoration: none;
     color: white;
-    background-color: rgb(110, 171, 255);
     border: 2px solid white;
-    border-radius: 2px;
+    border-left: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,13 +19,43 @@
     width: 100px;
     height: 40px;
     font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.backBtn span{
+    width: 0;
+    opacity: 0;
+    transition: all 0.2s ease;
 }
 
 .backBtn:hover{
-    background-color: rgba(221, 235, 255, 0.59);
+    background-color: rgb(128, 169, 236);
     cursor: pointer;
+    width: 120px;
+}
+
+.backBtn:hover span{
+    width: auto;
+    opacity: 1;
+    display: block;
 }
 
 .backBtn:active{
     background-color: rgba(49, 135, 255, 0.59);
+}
+
+.backBtn span{
+    transform: rotate(180deg);
+}
+
+
+/* Dark Mode Style */
+
+.darkModeStyle{
+    color: rgb(49, 49, 49);
+    border-color: rgb(49, 49, 49);
+}
+
+.darkModeStyle:hover{
+    background-color: #2196F3;
 }

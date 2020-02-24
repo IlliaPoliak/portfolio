@@ -1,0 +1,78 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/***********   INFO **************/
+
+.header .info{
+    flex: 1 1 auto;
+    text-align: start;
+}
+
+.header .info span{
+    display: inline-block;
+    min-width: 20px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+    text-align: center;
+}
+
+.header .info .allTasks{
+    color: #fff;
+}   
+
+.header .info .activeTasks{
+    background-color: rgb(50, 139, 190);
+    font-weight: bold;
+}  
+
+.header .info .completedTasks{
+    background-color: orange;
+    font-weight: bold;
+}  
+
+
+/************* CHECK ALL **************/
+
+.header .checkAll{
+    flex: 0 1 auto;
+    color: #fff;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header .checkAll .checkAllCheckbox{
+    margin-top: 7px;
+}
+
+.header .checkAll .checkAllCheckbox:hover{
+    cursor: pointer;
+}
+
+/************ CLEAR BTN ****************/
+
+.header .clearCompleted{
+    padding: 8px 5px;
+    height: fit-content;
+    background-color: rgb(68, 68, 68);
+    border: 3px solid rgb(255, 255, 255);
+    color: #fff;
+    flex: 0 1 auto;
+    margin: 0 10px;
+    width: 100px;
+    transition: all 0.2s ease;
+}
+
+.header .clearCompleted:hover{
+    background-color: rgb(132, 132, 132);
+    cursor: pointer;
+}
+
+.header .clearCompleted:focus{
+    outline: none;
+}

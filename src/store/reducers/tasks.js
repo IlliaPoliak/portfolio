@@ -1,6 +1,6 @@
 import { load } from 'redux-localstorage-simple';
 
-let TASKS = load({namespace: 'todo-app'})
+let TASKS = load({namespace: 'portfolio-app'})
 
 if (!TASKS || !TASKS.tasks || !TASKS.tasks.length){
     TASKS = {

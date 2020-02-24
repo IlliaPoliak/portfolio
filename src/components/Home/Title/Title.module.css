@@ -1,0 +1,34 @@
+
+.presentation{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.titleInfo{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+.titleInfo h1, h2{
+    margin: 0;
+    padding: 0;
+}
+
+.titleInfo h1{
+    color: springgreen;
+    font-size: 64px;
+}
+
+.titleInfo h2{
+    color: orange;
+    font-size: 38px;
+}
+
+.presentation .photoWrapper img{
+    height: 100%;
+    margin-left: 250px;
+}

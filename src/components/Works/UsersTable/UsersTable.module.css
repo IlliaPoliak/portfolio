@@ -1,0 +1,12 @@
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.tableWrapper{
+    margin: 100px 0;
+}

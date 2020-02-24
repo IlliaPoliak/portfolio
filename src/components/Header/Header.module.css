@@ -1,32 +1,35 @@
 
 .liteMode{
-    background-color: rgb(180, 180, 180);
+    /* background-color: rgb(180, 180, 180); */
 }
 
 .darkMode{
-    background-color: rgb(67, 67, 67);
+    /* background-color: rgb(67, 67, 67); */
 }
 
-.active{
-    color: tomato;
-    background-color: rgb(255, 172, 172);
-}
-
-.header nav ul{
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
     display: flex;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.header nav ul li{
-    list-style: none;
-}
-
-.header nav ul li a{
+.leftSide,
+.rightSide{
     display: flex;
-    text-decoration: none;
-    color: white;
-    height: 5vh;
-    align-items: center;
-    padding: 0 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.leftSide{
+    margin-left: 50px;
+}
+
+.rightSide{
+    margin-right: 50px;
+    justify-content: flex-end;
 }

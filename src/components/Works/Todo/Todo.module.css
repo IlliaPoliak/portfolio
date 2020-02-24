@@ -1,0 +1,28 @@
+.todoBlock{
+    width: 100%;
+    min-height: 90vh;
+}
+
+.todoWrapper{
+    margin: 200px 34% 100px;
+    text-align: center;
+    padding: 20px;
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(68, 68, 68);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1000px){
+    .todoWrapper{
+        margin: 0 20%; 
+    }
+}
+
+@media (max-width: 570px){
+    .todoWrapper{
+        margin: 0 10%; 
+    }
+}

@@ -1,0 +1,151 @@
+:root{
+    --blu-sky-color: #2988ff;
+    --dark-grey-color: rgb(49, 49, 49);
+}
+
+.testBlock{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.darkModeStyles{
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+
+/* Tests */
+
+.testsWrapper{
+    margin: 100px 0 50px;
+}
+
+.testsWrapper:last-child{
+    margin-bottom: 50px;
+}
+
+.testWrapper{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testWrapper h3{
+    margin: 10px 0;
+    padding: 0;
+    color: var(--dark-grey-color);
+}
+
+.darkModeStyles .testWrapper h3{
+    color: white;
+}
+
+.test {
+    transition: all 0.2s ease;
+    padding: 5px 10px;
+    width: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 5px;
+}
+
+.test:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.test:active{
+    background-color: rgba(70, 70, 70, 0.4);
+}
+
+.testWrapper .true{
+    background-color: rgb(0, 188, 0);
+    color: white;
+}
+
+.testWrapper .false{
+    background-color: red;
+    color: white;
+}
+
+.variantsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+/* Add Test Form  */
+
+.testForm{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.questionBlock{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.testForm div{
+    position: relative;
+}
+
+.testForm div input[type='radio']{
+    position: absolute;
+    top: 30%;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+}
+
+.testForm div input[type='radio']:hover{
+    cursor: pointer;
+}
+
+.testForm div input[type='radio']:checked::before{
+    position: absolute;
+    content: 'Правильный';
+    top: 0;
+    left: -100px;
+    color: rgb(104, 104, 104);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.testForm input[type='text']{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.variantSelect{
+    display: flex;
+    flex-direction: column;
+}
+
+.variantSelect label{
+    margin: 4px 0;
+}
+
+.controlBtnWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}

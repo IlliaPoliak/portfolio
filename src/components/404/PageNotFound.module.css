@@ -1,0 +1,26 @@
+.pageNotFoundBlock{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageNotFoundBlock span{
+    font-size: 60px;
+    /* color: gold; */
+}
+
+.errorWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.pageNotFoundBlock h1{
+    font-size: 64px;
+}
+
+.pageNotFoundBlock p{
+    font-size: 26px;
+}
