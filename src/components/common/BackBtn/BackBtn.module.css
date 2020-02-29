@@ -1,4 +1,3 @@
-
 .backBtnWrapper{
     display: flex;
     justify-content: center;
@@ -32,12 +31,15 @@
     background-color: rgb(128, 169, 236);
     cursor: pointer;
     width: 120px;
+    border-color: white;
+    color: white;
 }
 
 .backBtn:hover span{
     width: auto;
     opacity: 1;
     display: block;
+    color: white;
 }
 
 .backBtn:active{
@@ -48,7 +50,6 @@
     transform: rotate(180deg);
 }
 
-
 /* Dark Mode Style */
 
 .darkModeStyle{
@@ -58,4 +59,17 @@
 
 .darkModeStyle:hover{
     background-color: #2196F3;
+}
+
+
+@media (max-width: 1180px){
+    .backBtnWrapper{
+        top: 80px;
+    }
+}
+
+@media (max-width: 580px){
+    .backBtnWrapper{
+        display: none;
+    }
 }

@@ -5,20 +5,40 @@
     font-size: 20px;
     color: wheat;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
 }
 
 .descWrapper{  
-    /* border: 2px dotted orange; */
     border-radius: 10px;
     width: 80vw;
     padding: 40px;
     margin-top: 50px;
 }
 
-.description p span{
+.description {
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.description .title{
     font-size: 42px;
+    color: palegreen;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.description p span:first-child{
+    font-size: 24px;
     color: orange;
     margin-left: 40px;
+}
+
+.description .mark{
+    font-size: 24px;
+    color: orange;
 }
 
 .description p a{
@@ -47,8 +67,14 @@
     border: none;
 }
 
-.darkModeStyle p span{
+.darkModeStyle .title{
     color: #303030;
+}
+
+.darkModeStyle p span:first-child,
+.darkModeStyle .mark{
+    color: #303030;
+    font-size: 20px;
 }
 
 .darkModeStyle p a{
@@ -62,4 +88,32 @@
 .darkModeStyle ul li::before{
     color: rgb(1, 125, 22);
     font-weight: bold;
+}
+
+
+.animation{
+    visibility: visible;
+    animation: showBlock 1s ease;
+}
+
+@keyframes showBlock{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+@media (max-width: 1024px){
+    .descWrapper{  
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    
 }

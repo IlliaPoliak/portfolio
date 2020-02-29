@@ -1,3 +1,9 @@
+.loaderBlock{
+  width: 100%;
+  min-height: 90vh;
+  position: relative;
+}
+
 .lds-roller {
     display: inline-block;
     position: absolute;
@@ -18,6 +24,7 @@
     height: 7px;
     border-radius: 50%;
     background: rgb(176, 200, 255);
+    background: rgb(67, 67, 67);
     margin: -4px 0 0 -4px;
   }
   .lds-roller div:nth-child(1) {

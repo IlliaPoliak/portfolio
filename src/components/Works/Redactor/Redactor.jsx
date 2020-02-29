@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import {connect} from 'react-redux'
 import styles from './Redactor.module.css'
 import noImg from './img/noimage.png'
 import BackBtn from '../../common/BackBtn/BackBtn';
@@ -148,4 +149,4 @@ const Redactor = ({darkMode}) => {
     </>
 }
 
-export default Redactor
+export default connect(state => ({ darkMode: state.app.darkMode }), {})(Redactor);

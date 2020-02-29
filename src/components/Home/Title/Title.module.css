@@ -2,9 +2,11 @@
 .presentation{
     display: flex;
     position: relative;
+    width: 100%;
     height: 100vh;
     box-sizing: border-box;
     background-color: #000;
+    overflow: hidden;
 }
 
 .titleInfo{
@@ -13,7 +15,8 @@
     left: 50%;
 }
 
-.titleInfo h1, h2{
+.titleInfo h1, 
+.titleInfo h2{
     margin: 0;
     padding: 0;
 }
@@ -21,14 +24,103 @@
 .titleInfo h1{
     color: springgreen;
     font-size: 64px;
+
+    animation: showName 1s ease;
 }
 
 .titleInfo h2{
     color: orange;
     font-size: 38px;
+
+    animation: showSubtitle 1s ease;
 }
 
 .presentation .photoWrapper img{
     height: 100%;
     margin-left: 250px;
 }
+
+@keyframes showName{
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes showSubtitle{
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+@media (max-width: 1400px){
+    .titleInfo{
+        left: auto;
+        right: 200px;
+    }
+    .presentation .photoWrapper img{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1200px){
+    .titleInfo{
+        left: auto;
+        right: 100px;
+    }
+    .presentation .photoWrapper img{
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 1024px){
+    .titleInfo{
+        left: auto;
+        right: 60px;
+    }
+    .presentation .photoWrapper img{
+        margin-left: 40px;
+    }
+    .titleInfo h1{
+        font-size: 56px;
+    }
+    .titleInfo h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 860px){
+
+    .titleInfo{
+        top: auto;
+        right: 60px;
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 768px){
+    .titleInfo h1{
+        font-size: 46px;
+    }
+    .titleInfo h2{
+        font-size: 24px;
+    }
+    .presentation .photoWrapper img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+

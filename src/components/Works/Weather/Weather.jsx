@@ -2,6 +2,7 @@ import React from 'react';
 import Input from './Input/Input';
 import styles from './Weather.module.css';
 import Info from './Info/Info';
+import BackBtn from '../../common/BackBtn/BackBtn';
 
 
 const API_KEY = '2852372ee74f14a8e216bd6ac515418d';
@@ -79,6 +80,8 @@ class Weather extends React.Component {
 						<Info  info={this.state}/>
 					</div>
 				</div>
+
+				<BackBtn />
 			</div>
 		);
 	}

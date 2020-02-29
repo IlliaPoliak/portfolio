@@ -12,7 +12,7 @@ const Pages = ({lang}) => {
     const obj = lang === 'en' ? en : lang === 'ru' ? ru : lang === 'uk' ? uk : false
 
     return (
-        <nav>
+        <nav id='nav'>
             <ul className={styles.navigation}>
                 {Object.entries(obj).map(([key, value]) => (
                     <li key={key}>

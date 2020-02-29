@@ -57,7 +57,7 @@ class App extends Component {
 		} = this.props
 
 		let totalItemsCount = usersData ? usersData.length : 0
-		debugger
+
 		return (
 			<div className={styles.app}>
 				{	isLoading ? <Loader />

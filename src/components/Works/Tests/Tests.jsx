@@ -22,4 +22,4 @@ const Tests = ({ tests, checkingAnswer, darkMode }) => (
     </div>
 )
 
-export default Tests;
+export default Tests

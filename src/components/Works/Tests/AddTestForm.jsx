@@ -7,7 +7,7 @@ const variants = ['a', 'b', 'c', 'd']
 class AddTestForm extends React.Component {
 
     state = {
-        id: this.props.nextId,
+        id: this.props.nextId + 1,
         question: '',
         answer: 'a',
         variants: { 'a': '', 'b': '', 'c': '', 'd': '' }
@@ -26,7 +26,7 @@ class AddTestForm extends React.Component {
                             onChange={e => this.setState({ question: e.target.value })} />
                     </label>
 
-                    {variants.map((v, i) => <div key={v}>
+                    {variants.map((v, i) => <div key={v} className={styles.variants}>
                         <input
                             defaultChecked={i === 0 ? true : false}
                             type="radio" name="rightAnswer"

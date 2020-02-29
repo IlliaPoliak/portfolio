@@ -1,23 +1,39 @@
 .menuWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
     display: flex;
     font-size: 24px;
     font-family: 'Arial' ,serif;
 }
 
 .menu {
-    background-color: rgb(116, 116, 116);
+    background-color: rgba(67, 67, 67, 0.96);
     width: 0;
     transition: 0.3s;
     overflow: hidden;
 }
 
+.contentWrapper{
+    position: relative;
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+}
+
 .show{
-    width: 200px;
+    width: 60vw;
 }
 
 .menuIcon{
-    font-size: 40px;
-    color: #30006abd;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
 }
 
 .menuIcon:hover{

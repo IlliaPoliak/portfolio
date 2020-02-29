@@ -2,33 +2,32 @@ import React from 'react';
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
-// import './Register.css'
 import styles from './Register.module.css'
 import { validate } from './validators'
 import BackBtn from '../../common/BackBtn/BackBtn';
 
 
 const Input = ({ input, label, type, required, meta: { touched, error } }) => {
-    const {field, errorMessage, errorField } = styles
-    
+    const { field, errorMessage, errorField } = styles
+
     return (
-    <div className={field}>
-        <label>{label}: {required && <span className={styles.required}>*</span> }
-        {touched && error && <span className={errorMessage}>{error}</span>}
-            <input
-                {...input}
-                type={type}
-                placeholder={label}
-                className={touched && error ? errorField : ''}
-            />
-        </label>
-    </div>
-)
+        <div className={field}>
+            <label>{label}: {required && <span className={styles.required}>*</span>}
+                {touched && error && <span className={errorMessage}>{error}</span>}
+                <input
+                    {...input}
+                    type={type}
+                    placeholder={label}
+                    className={touched && error ? errorField : ''}
+                />
+            </label>
+        </div>
+    )
 }
 
 const Register = (props) => {
 
-    const {formWrapper, sex, status, button} = styles
+    const { formWrapper, sex, status, button } = styles
 
     // console.log(props)
     return <div className={formWrapper}>

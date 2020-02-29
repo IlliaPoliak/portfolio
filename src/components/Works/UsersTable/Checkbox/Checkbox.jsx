@@ -1,5 +1,4 @@
 import React from 'react'
-// import './Checkbox.css'
 import styles from './Checkbox.module.css'
 
 export default ({ id, checkedValue, onChange }) => <>

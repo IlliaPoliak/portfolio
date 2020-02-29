@@ -1,12 +1,3 @@
-
-.liteMode{
-    /* background-color: rgb(180, 180, 180); */
-}
-
-.darkMode{
-    /* background-color: rgb(67, 67, 67); */
-}
-
 .header{
     position: fixed;
     top: 0;
@@ -32,4 +23,29 @@
 .rightSide{
     margin-right: 50px;
     justify-content: flex-end;
+}
+
+.burgerMenu{
+    display: none;
+    width: 300px;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(53, 53, 53);
+
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 840px){
+    .leftSide{
+        margin-left: 20px;
+    }
+    .rightSide{
+        margin-right: 20px;
+    }
 }

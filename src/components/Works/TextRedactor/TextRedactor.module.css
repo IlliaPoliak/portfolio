@@ -10,7 +10,7 @@
 }
 
 .areaWrapper{
-    width: 40%;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     margin-top: 200px;
@@ -18,15 +18,20 @@
 
 .panel { margin: 20px 0; }
 
+.panel span{ 
+    width: max-content;
+}
+
 .controlBtn{
     color: #fff;
     font-size: 16px;
     border: 1px solid #fff;
     border-radius: 2px;
-    width: 20px;
+    min-width: 30px;
+    text-align: center;
     padding: 4px 8px;
     box-shadow: 1px 1px 4px rgba(70, 70, 70, 0.7);
-    margin: 0 4px;
+    margin: 10px 4px;
     transition: 0.4s ease;
     background-color:  rgba(73,155,234,1);
 }
@@ -80,3 +85,26 @@ textarea[name=insertText] {
 }
 
 .select:hover { cursor: pointer; }
+
+
+
+
+
+@media (max-width: 1160px){
+    .areaWrapper{
+        width: 80vw;
+    }
+    .panel { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .panel select{
+        height: max-content;
+        margin: 10px 4px;
+    }
+    .pipe{
+        display: none;
+    }
+}

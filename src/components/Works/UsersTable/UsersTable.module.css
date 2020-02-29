@@ -1,12 +1,26 @@
-
 .app{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 90vh;
+    box-sizing: border-box;
 }
 
 .tableWrapper{
-    margin: 100px 0;
+    margin: 140px 0;
+}
+
+
+
+
+@media (max-width: 860px){
+    .app{
+        height: 120vh;
+        transform: rotate(90deg);
+    }
+    .tableWrapper{
+        margin: 0;
+    }
 }

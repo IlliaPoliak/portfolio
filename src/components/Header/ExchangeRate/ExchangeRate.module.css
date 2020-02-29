@@ -4,5 +4,30 @@
     justify-content: center;
     color: springgreen;
     font-size: 12px;
-    /* margin-left: 30px; */
+}
+
+.animation{
+    animation: showSpan 0.8s ease;
+}
+
+@keyframes showSpan{
+    0%{
+        transform: translateY(-16px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    .exchangeBlock{
+        position: absolute;
+        top: 50px;
+        left: 60px;
+        font-size: 14px;
+    }
 }

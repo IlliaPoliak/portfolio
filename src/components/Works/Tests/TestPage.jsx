@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import {connect} from 'react-redux'
 import styles from './TestPage.module.css'
 import AddTestForm from './AddTestForm';
 import Tests from './Tests';
 import BackBtn from '../../common/BackBtn/BackBtn';
 import ControlBtn from '../../common/ControlBtn/ControlBtn';
+import { addTest } from '../../../store/actions'
 
 
 const TestPage = props => {
@@ -86,13 +88,13 @@ const TestPage = props => {
                 <ControlBtn func={addQuestion}>Добавить вопрос</ControlBtn>
             </div>}
 
-            {startTest && <>
+            {startTest && <div className={styles.resultData}>
                 <Tests tests={props.tests} checkingAnswer={checkingAnswer} darkMode={props.darkMode} />
                 <ControlBtn func={finish}>Закончить тест</ControlBtn>
-            </>
+            </div>
             }
             {endOfTest &&
-                <div>
+                <div className={styles.resultData}>
                     <h3>Результаты:</h3>
                     <p>Всего: {props.tests.length} </p>
                     <p>Правильных: {correct}</p>
@@ -101,11 +103,14 @@ const TestPage = props => {
                     <ControlBtn func={repeatTest}>Повторить</ControlBtn>
                 </div>
             }
-            {addTest && <AddTestForm handleSubmit={handleSubmit} nextId={props.tests.length + 1} closeAddForm={closeAddForm} />}
+            {addTest && <AddTestForm handleSubmit={handleSubmit} nextId={props.tests.length} closeAddForm={closeAddForm} />}
 
             <BackBtn />
         </div>
     )
 }
 
-export default TestPage;
+export default connect(state => ({
+	tests: state.testing.tests,
+	darkMode: state.app.darkMode
+}), { addTest })(TestPage)

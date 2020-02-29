@@ -10,7 +10,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
 }
 
 .darkModeStyles{
@@ -86,13 +85,20 @@
 }
 
 
-
 /* Add Test Form  */
 
 .testForm{
     display: flex;
     flex-direction: column;
     width: 400px;
+}
+
+.resultData{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .questionBlock{
@@ -149,3 +155,21 @@
     justify-content: space-between;
     margin-top: 30px;
 }
+
+
+
+
+/* 
+@media (max-width: 768px){
+    .testForm{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .variants{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+} */

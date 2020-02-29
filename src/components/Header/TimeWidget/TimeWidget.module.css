@@ -5,3 +5,30 @@
     font-size: 12px;
     width: 150px;
 }
+
+
+
+
+
+@media (max-width: 1024px){
+    .timeBlock{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .timeBlock{
+        display: flex;
+        position: absolute;
+        left: 20px;
+        bottom: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 580px){
+    .timeBlock{
+        left: 60px;
+        bottom: 100px;
+    }
+}

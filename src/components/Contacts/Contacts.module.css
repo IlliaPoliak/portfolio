@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 }
 
 .contactsWrapper{
@@ -102,4 +103,80 @@
 .darkModeStyle .iconsWrapper a:hover .fa{
     border: 2px solid rgb(87, 153, 227);
     background-color: rgb(87, 153, 227);
+}
+
+
+
+
+.animation{
+    visibility: visible;
+    animation: showBlock 1s ease;
+}
+
+@keyframes showBlock{
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .iconsWrapper a{
+        margin: 0 20px;
+    } 
+}
+
+@media (max-width: 580px){
+    .contactsBlock{
+        align-items: start;
+        height: auto;
+    }
+    .contactsWrapper h2{
+        margin-top: 100px;
+    }
+    .contactsWrapper p{
+        width: 80%;
+    }
+
+    .contactsWrapper p br{
+        display: none;
+    }
+
+    .iconsWrapper{
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    } 
+
+    .iconsWrapper a{
+        margin: 20px 0;
+        width: 50%;
+        height: 80px;
+    }
+}
+
+
+@media (max-width: 425px){
+    .contactsWrapper p{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .iconsWrapper{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    } 
+
+    .iconsWrapper a{
+        margin: 20px 0;
+        width: 50%;
+        height: 80px;
+    }
 }

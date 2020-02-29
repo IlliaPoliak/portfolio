@@ -78,3 +78,21 @@
     font-size: 14px;
     margin-left: 20px;
 }
+
+
+
+
+
+
+@media (max-width: 1300px){
+    .table{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 1024px){
+    .table{
+        width: 96vw;
+    }
+}
+

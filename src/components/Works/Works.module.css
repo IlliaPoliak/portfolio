@@ -2,13 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    box-sizing: border-box;
 }
 
 .works a:first-child{
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
-.page a:last-child{
+.works a:last-child{
     margin-bottom: 60px;
 }

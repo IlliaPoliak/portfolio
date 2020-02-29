@@ -76,3 +76,31 @@ input:checked + .slider:before {
     transform: translateX(22px);
     background-color: rgb(0, 104, 190);
 }
+
+
+
+
+
+
+@media (max-width: 1024px){
+    .modeBlock{
+        width: auto;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .modeBlock{
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+    }
+}
+
+@media (max-width: 580px){
+    .modeBlock{
+        right: auto;
+        left: 60px;
+        bottom: 40px;
+    }
+}

@@ -88,9 +88,9 @@ const TextRedactor = props => {
                     <span className={styles.pipe}>|</span>
                     
                     <select onChange={selectFontSize} className={styles.select}>
+                        <option value="14">14</option>
                         <option value="8">8</option>
                         <option value="12">12</option>
-                        <option selected value="14">14</option>
                         <option value="16">16</option>
                         <option value="20">20</option>
                         <option value="24">24</option>

@@ -32,6 +32,13 @@
     background-color: rgb(41, 20, 20);
 }
 
+.btnsWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .calculateBtn{
     width: 98px;
     font-family: Arial, serif;
@@ -69,7 +76,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, serif;
     width: 100%;
     height: 40px;
     font-size: 16px;
@@ -92,4 +98,43 @@
 .moreBtns div{
     margin-left: 10px;
     transform: rotate(90deg);
+}
+
+
+
+
+@media (max-width: 580px){
+    .calculator{
+        margin-top: 140px;
+    }
+    .calculator,
+    .more{
+        width: 80%;
+    }
+    .calculateBtn{
+        flex: 1 1 auto;
+    }
+    .equal{
+        flex: 2 1 auto;
+    }
+    .resultInput{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .calculator,
+    .more{
+        width: 90%;
+    }
+    .calculateBtn{
+        flex: 1 1 auto;
+        /* font-size: 16px; */
+    }
+    .equal{
+        flex: 2 1 auto;
+    }
+    .resultInput{
+        width: 100%;
+    }
 }

@@ -76,3 +76,24 @@
 .header .clearCompleted:focus{
     outline: none;
 }
+
+
+
+@media (max-width: 600px){
+    .header .clearCompleted{
+        margin: 0 4px;
+    }
+}
+
+
+@media (max-width: 425px){
+    .header{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .header .info{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

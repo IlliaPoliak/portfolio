@@ -11,8 +11,8 @@ const CalcBtns = (props) => {
         '.', '0', '=',
     ]
 
-    return (
-        buttons.map(btn => (
+    return <div className={styles.btnsWrapper}>
+        {buttons.map(btn => (
             <div
                 className={btn === '=' ? `${styles.calculateBtn} ${styles.equal}` : styles.calculateBtn}
                 id={btn}
@@ -24,8 +24,8 @@ const CalcBtns = (props) => {
                 : btn === '-' ? <>&#8722;</> 
                 : btn}
             </div>
-        ))
-    )
+        ))}
+    </div>
 }
 
 export default CalcBtns

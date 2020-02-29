@@ -8,3 +8,10 @@
 	color: red;
 	font-weight: bold;
 }
+
+
+@media (max-width: 580px){
+    .paramsInfo {
+		width: 100%;
+	}
+}

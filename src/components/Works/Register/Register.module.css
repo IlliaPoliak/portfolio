@@ -83,3 +83,19 @@
     cursor: not-allowed;
     background-color: rgba(126, 126, 126, 0.305);
 }
+
+
+
+
+@media (max-width: 580px){
+    .formWrapper{
+        margin-top: 140px;
+        display: flex;
+        justify-content: center;
+    }
+    .formWrapper form{
+        padding: 30px;
+        width: 90%;
+        box-sizing: border-box;
+    }
+}

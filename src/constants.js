@@ -27,3 +27,4 @@ export const DELETE_CHECKED_USERS = 'tableReducer/DELETE_CHECKED_USERS';
 // COLORS
 export const LIGHT_BLUE = '#2988ff'
 export const SKY_BLUE = '#2196F3'
+// const CLEAR_SKY = 'rgb(71, 187, 255);'
