@@ -26,9 +26,10 @@ const UsersTable = React.lazy(() => import('./Works/UsersTable/UsersTable'));
 const App = props => {
 
 	let [burgerMenu, setBurgerMenu] = useState(false)
-	const handleResize = e => e.target.innerWidth < 768 ? setBurgerMenu(true) : setBurgerMenu(false)
+	const handleResize = e => e.target.innerWidth <= 768 ? setBurgerMenu(true) : setBurgerMenu(false)
 
 	useEffect(()=>{
+		window.innerWidth < 768 ? setBurgerMenu(true) : setBurgerMenu(false)
 		window.addEventListener('resize', handleResize)
 		return ()=>window.removeEventListener('resize', handleResize)
 	}, [])

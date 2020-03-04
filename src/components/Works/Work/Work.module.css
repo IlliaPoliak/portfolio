@@ -104,6 +104,8 @@
     .workBlockWrapper{
         height: auto;
         padding: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .workBlock{
         flex-direction: column-reverse;

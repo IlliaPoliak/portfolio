@@ -4,8 +4,7 @@ import styles from './Weather.module.css';
 import Info from './Info/Info';
 import BackBtn from '../../common/BackBtn/BackBtn';
 
-
-const API_KEY = '2852372ee74f14a8e216bd6ac515418d';
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY
 
 class Weather extends React.Component {
 

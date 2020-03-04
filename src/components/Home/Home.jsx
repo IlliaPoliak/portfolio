@@ -5,7 +5,7 @@ import Contacts from '../Contacts/Contacts';
 import Works from '../Works/Works';
 
 const Home = ({darkMode}) => (
-    <div>
+    <div style={{width: '100%'}}>
         <Title />
         <Description darkMode={darkMode} />
         <Works />

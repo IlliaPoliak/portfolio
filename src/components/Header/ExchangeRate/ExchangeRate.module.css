@@ -31,3 +31,11 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 375px){
+    .exchangeBlock{
+        font-size: 10px;
+        bottom: 160px;
+        top: auto;
+    }
+}

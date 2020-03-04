@@ -1,9 +1,9 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Site-portfolio by Illia Poliak",
+  "description": "Site-portfolio of Illia Poliak",
   "author": "Illia Poliak <polakser@ukr.net>",
-  "homepage": "https://ilyapolyak.github.io/portfolio/",
+  "homepage": "https://ilyapolyak.github.io/portfolio-preview/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,7 +15,7 @@
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "^3.3.0",
     "redux": "^4.0.5",
     "redux-form": "^8.2.6",
     "redux-localstorage-simple": "^2.1.6",
